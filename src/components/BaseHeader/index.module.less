@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-color: #fff;
+    align-items: center;
+
+    .logo {
+        width: 300px;
+        height: 80px;
+        background: url('@/assets/images/home/gs_logo.png') no-repeat 100% center/100%;
+    }
+
+    .menu {
+        width: 50%;
+
+        li {
+            flex: 1;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .popupStyle {
+            background-color: pink;
+        }
+    }
+
+    :global {
+        .ant-menu-item, .ant-menu-submenu-title {
+            height: 120px;
+            line-height: 120px;
+        }
+
+       
+    }
+}
